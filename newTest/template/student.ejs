@@ -6,11 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <form >
+    <form>
         <% list.forEach( student => { %>
             <li> <%= student.stuNo %></li>
             <label>
-                <click=""><li> <%= student.stuName %></li></click>
+                <a herf="/student/<%= student.stuNo %>?_method=PUT "><li> <%= student.stuName %></li></a>
             </label>
             <li> <%= student.stuDept %></li>
             <li> <%= student.stuGrade %></li>
